@@ -48,4 +48,6 @@ Any time you make a change to Election.sol you need to run truffle compile.
 ```sh
 truffle compile
 ```
-![image](assets\truffle-compile.JPG)
+you should see the following output:
+
+![truffle-compile](https://github.com/tawseefnabi/e-Voting-dApp/blob/main/assets/truffle-compile.JPG)
