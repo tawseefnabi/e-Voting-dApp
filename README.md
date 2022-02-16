@@ -32,3 +32,20 @@ truffle init
 ```
 
 This will setup our initial project structure. Smart contracts will be stored in the `contracts` folder, deployment functions for migrating smart contracts to the network will be stored in the `migrations` folder. And `build/contracts` folder would contain information about the deployed contract, ABI etc.
+
+- First of all, we need to create an account on Avalanche network. Please visit Avalanche Wallet to create your account and save your mnemonics in the .env file.
+- Now copy your Datahub's Avalanche Fuji testnet API key in the .env file as shown below.
+- Never share or commit your .env file! It may contain sensitive information such as credentials and API keys. Therefore, it is advised to always add .env to your .gitignore file.
+
+```sh
+MNEMONIC="<avalanche-wallet-mnemonic>"
+APIKEY=<your-api-key>
+```
+
+## Compile Contracts with Truffle
+
+Any time you make a change to Election.sol you need to run truffle compile.
+```sh
+truffle compile
+```
+![image](assets\truffle-compile.JPG)

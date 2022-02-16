@@ -22,10 +22,12 @@ const HDWalletProvider = require('@truffle/hdwallet-provider');
 //
 // const fs = require('fs');
 // const mnemonic = fs.readFileSync(".secret").toString().trim();
+
 //Account credentials from which our contract will be deployed
 const mnemonic = process.env.MNEMONIC;
+
 //API key of your Datahub account for Avalanche Fuji test network
-const APIKEY = process.env.APIKEY;s
+const APIKEY = process.env.APIKEY;
 module.exports = {
   /**
    * Networks define how you connect to your ethereum client and let you set the
@@ -89,7 +91,7 @@ module.exports = {
       enabled: true,
       runs: 200
     }
-  }
+  },
 
   // Set default mocha options here, use special reporters etc.
   mocha: {
